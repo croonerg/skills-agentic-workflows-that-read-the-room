@@ -14,6 +14,7 @@ network:
     - defaults
     - github.com
     - github.blog
+    - awesome-copilot.github.com
 tools:
   edit:
   web-fetch:
@@ -34,19 +35,22 @@ safe-outputs:
    guidance on tone, sourcing, and review process.
 2. Fetch `https://github.blog/latest/` and `https://github.blog/changelog/` to
    find recent, notable GitHub Blog posts and Changelog entries.
-3. Update `site/content/github-info.md` to reflect the most relevant recent
+3. Fetch `https://awesome-copilot.github.com/workflows/` to find notable
+   Awesome Copilot workflows worth highlighting.
+4. Update `site/content/github-info.md` to reflect the most relevant recent
    stories, following Mona's notes:
    - Keep summaries short and practical.
    - Prefer updates that help developers learn GitHub faster.
-   - Mention the source (GitHub Blog or GitHub Changelog) for each update.
+   - Mention the source (GitHub Blog, GitHub Changelog, or Awesome Copilot) for
+     each update.
    - Preserve the existing structure and sections of the file where it still
      makes sense; only edit what needs updating.
-4. Open a pull request with the change so Mona can review it before it goes
+5. Open a pull request with the change so Mona can review it before it goes
    live.
 
 ## Safe Outputs
 
 - Use `create-pull-request` to propose the updated `site/content/github-info.md`.
 - If nothing in `site/content/github-info.md` needs to change after reviewing
-  both sources, call `noop` with a short reason instead of opening a pull
+  all sources, call `noop` with a short reason instead of opening a pull
   request.
