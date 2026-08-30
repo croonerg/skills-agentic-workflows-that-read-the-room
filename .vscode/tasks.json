@@ -57,7 +57,7 @@
         "background": {
           "activeOnStart": true,
           "beginsPattern": ".",
-          "endsPattern": "Local\\s+http://localhost:4321/|Local\\s+http://127\\.0\\.0\\.1:4321/"
+          "endsPattern": "(?:Dev server running at|Local)\\s+https?://(?:localhost|127\\.0\\.0\\.1):4321"
         }
       }
     },
@@ -91,7 +91,7 @@
         "background": {
           "activeOnStart": true,
           "beginsPattern": ".",
-          "endsPattern": "Local\\s+http://localhost:4321/|Local\\s+http://127\\.0\\.0\\.1:4321/"
+          "endsPattern": "(?:Dev server running at|Local)\\s+https?://(?:localhost|127\\.0\\.0\\.1):4321"
         }
       }
     }
