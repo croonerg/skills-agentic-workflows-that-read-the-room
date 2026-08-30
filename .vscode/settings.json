@@ -1,4 +1,5 @@
 {
   "task.allowAutomaticTasks": "on",
-  "terminal.integrated.defaultLocation": "editor"
+  "terminal.integrated.defaultLocation": "editor",
+  "chat.disableAIFeatures": false
 }
