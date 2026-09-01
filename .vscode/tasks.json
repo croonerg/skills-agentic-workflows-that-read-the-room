@@ -42,7 +42,10 @@
       "type": "shell",
       "command": "npm run dev -- --host 0.0.0.0 --port 4321",
       "options": {
-        "cwd": "${workspaceFolder}/site"
+        "cwd": "${workspaceFolder}/site",
+        "env": {
+          "ASTRO_DEV_BACKGROUND": "1"
+        }
       },
       "dependsOn": ["site: install"],
       "isBackground": true,

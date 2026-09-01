@@ -35,6 +35,7 @@
     }
   },
   "remoteEnv": {
-    "ASTRO_TELEMETRY_DISABLED": "1"
+    "ASTRO_TELEMETRY_DISABLED": "1",
+    "ASTRO_DEV_BACKGROUND": "1"
   }
 }
